@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+<<<<<<< HEAD
     android:layout_height="wrap_content"
     tools:context=".DetailActivity">
 
@@ -54,3 +53,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cursoNome" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/courseDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/curso1"
+            android:contentDescription="Imagem ampliada do curso" />
+
+        <TextView
+            android:id="@+id/courseDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do Curso"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/courseDetailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição do curso"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/courseDetailCredits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Créditos do curso"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/courseDetailDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duração do curso"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
+>>>>>>> 97abacc1bf705c23b98334189d0d40504ab863c3
